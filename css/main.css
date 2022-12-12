@@ -4,14 +4,20 @@ body {
 }
 
 .container {
-  padding: 5rem 0;
+  padding: 2rem 0;
   max-width: 72rem;
 }
 .container header {
+  padding: 2rem 0;
   display: flex;
   justify-content: space-between;
 }
+.container header nav {
+  display: flex;
+  gap: 2rem;
+}
 .container header nav a {
+  color: hsl(236deg, 13%, 42%);
   text-decoration: none;
 }
 
