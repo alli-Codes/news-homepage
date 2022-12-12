@@ -4,5 +4,11 @@
   "description": "A single webpage for news.",
   "main": "index.js",
   "author": "alli-Codes",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "sass-watch": "sass --watch ./css/style.scss ./css/main.css"
+  },
+  "dependencies": {
+    "sass": "^1.56.2"
+  }
 }
