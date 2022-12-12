@@ -1,0 +1,8 @@
+{
+  "name": "news-homepage",
+  "version": "1.0.0",
+  "description": "A single webpage for news.",
+  "main": "index.js",
+  "author": "alli-Codes",
+  "license": "MIT"
+}
