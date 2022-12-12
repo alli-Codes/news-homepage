@@ -6,6 +6,12 @@ $sc-grayish__blue: hsl(233, 8%, 79%);
 $sc-dark__grayish__blue: hsl(236, 13%, 42%);
 $sc-very__dark__blue: hsl(240, 100%, 5%);
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
     display: flex;
     justify-content: center;
@@ -14,7 +20,7 @@ body{
 }
 
 .container{
-    padding: 2rem 0;
+    padding: 3rem 0;
     max-width: 72rem;
 
     header{
@@ -68,6 +74,7 @@ body{
                 p{
                     color: hsl(236, 13%, 42%);
                     width: 25rem;
+                    line-height: 1.3rem;
                     font-size: .9rem;
                 }
                 button{
@@ -103,6 +110,38 @@ body{
             width: 100%;
             display: block;
             border-top: .002rem solid $sc-dark__grayish__blue;
+        }
+    }
+}
+
+.cards{
+    display: flex;
+    padding: 2rem 0;
+    gap: 1.5rem;
+    justify-content: space-between;
+    .card{
+        display: flex;
+        gap: 1.5rem;
+        .image__section{
+            height: 7rem;
+            img{
+                height: 100%;
+            }
+        }
+        .text__section{
+            padding: .6rem 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h4{
+                font-size: .9rem;
+                font-weight: 900;
+            }
+            p  {
+                max-width: 12rem;
+                font-size: .8rem;
+                line-height: 1.2rem;
+            }
         }
     }
 }
