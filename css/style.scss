@@ -1,6 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+$pc-red: hsl(35, 77%, 62%);
+$pc-orange: hsl(5, 85%, 63%);
+$sc-off__white: hsl(36, 100%, 99%);
+$sc-grayish__blue: hsl(233, 8%, 79%); 
+$sc-dark__grayish__blue: hsl(236, 13%, 42%);
+$sc-very__dark__blue: hsl(240, 100%, 5%);
+
 body{
     display: flex;
     justify-content: center;
+    font-family: 'Inter',
+        sans-serif;
 }
 
 .container{
@@ -32,7 +42,7 @@ body{
         .image__section{
             // width: 10rem;
             // flex: 1;
-            background-color: red;
+            // background-color: red;
             position: relative;
             img{
                 width: 100%;
@@ -46,8 +56,9 @@ body{
             align-items: center;
             justify-content: space-between;
             h1{
-                width: 15rem;
-                // font-weight: bolder;
+                color: $sc-very__dark__blue;
+                width: 20rem;
+                font-weight: 900;
                 font-size: 3rem;
             }
             .description{
@@ -55,20 +66,44 @@ body{
                 flex-direction: column;
                 gap: 2rem;
                 p{
-                    color: red;
-                    width: 20rem;
+                    color: hsl(236, 13%, 42%);
+                    width: 25rem;
+                    font-size: .9rem;
                 }
                 button{
+                    background-color: $pc-orange;
+                    color: white;
+                    border: none;
                     align-self: flex-start;
-                    padding: 1rem 4rem;
+                    padding: 1rem 2rem;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    letter-spacing: .2rem;
                 }
             }
         }
     }
     aside{
-        background-color: red;
+        background-color: $sc-very__dark__blue;
+        color: $sc-off__white;
+        padding: 0 2rem;
         grid-column: 3/-1;
-        // flex: 1;
+        h1{
+            color: $pc-red;
+            font-size: 2rem;
+        }
+        section{
+            padding: .5rem 0;
+            p{
+                font-size: .8rem;
+            }
+        }
+        i{
+            height: .002rem;
+            width: 100%;
+            display: block;
+            border-top: .002rem solid $sc-dark__grayish__blue;
+        }
     }
 }
 }
