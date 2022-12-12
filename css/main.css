@@ -20,5 +20,49 @@ body {
   color: hsl(236deg, 13%, 42%);
   text-decoration: none;
 }
+.container .hero {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.container .hero main {
+  grid-column: 1/3;
+}
+.container .hero main .image__section {
+  background-color: red;
+  position: relative;
+}
+.container .hero main .image__section img {
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+.container .hero main .text__section {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .hero main .text__section h1 {
+  width: 15rem;
+  font-size: 3rem;
+}
+.container .hero main .text__section .description {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.container .hero main .text__section .description p {
+  color: red;
+  width: 20rem;
+}
+.container .hero main .text__section .description button {
+  align-self: flex-start;
+  padding: 1rem 4rem;
+}
+.container .hero aside {
+  background-color: red;
+  grid-column: 3/-1;
+}
 
 /*# sourceMappingURL=main.css.map */
