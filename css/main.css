@@ -1,5 +1,18 @@
 body {
-  background-color: red;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  padding: 5rem 0;
+  max-width: 72rem;
+}
+.container header {
+  display: flex;
+  justify-content: space-between;
+}
+.container header nav a {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=main.css.map */
