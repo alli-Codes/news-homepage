@@ -48,6 +48,12 @@ body {
   object-fit: cover;
   position: relative;
 }
+.container .hero main .image__section .desktop-image {
+  display: block;
+}
+.container .hero main .image__section .mobile-image {
+  display: none;
+}
 .container .hero main .text__section {
   padding: 1rem 0;
   display: flex;
@@ -160,6 +166,12 @@ body {
     display: flex;
     flex-direction: column;
   }
+  .container .hero .image__section .desktop-image {
+    display: none !important;
+  }
+  .container .hero .image__section .mobile-image {
+    display: flex !important;
+  }
   .container .hero .text__section {
     max-width: 40rem;
     display: flex;
@@ -178,6 +190,15 @@ body {
   }
   .container .hero aside {
     padding: 1rem;
+  }
+  .container .hero aside section {
+    padding: 2rem 0;
+  }
+  .container .hero aside section h3 {
+    font-size: 1.4rem;
+  }
+  .container .hero aside section p {
+    font-size: 1rem;
   }
   .container .cards {
     flex-direction: column;
