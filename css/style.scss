@@ -103,6 +103,11 @@ body{
                     font-weight: 600;
                     font-size: .7rem;
                     letter-spacing: .2rem;
+                    transition: background-color .5s ease;
+                    cursor: pointer;
+                }
+                button:hover{
+                    background-color: $sc-very__dark__blue;
                 }
             }
         }

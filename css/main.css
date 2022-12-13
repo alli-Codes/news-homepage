@@ -92,6 +92,11 @@ body {
   font-weight: 600;
   font-size: 0.7rem;
   letter-spacing: 0.2rem;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+}
+.container .hero main .text__section .description button:hover {
+  background-color: hsl(240deg, 100%, 5%);
 }
 .container .hero aside {
   background-color: hsl(240deg, 100%, 5%);
