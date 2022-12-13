@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-  padding: 3rem 0;
+  padding: 3rem 1rem;
   max-width: 62rem;
 }
 .container header {
@@ -26,6 +26,7 @@ body {
 }
 .container header nav a {
   color: hsl(236deg, 13%, 42%);
+  font-size: 0.9rem;
   text-decoration: none;
 }
 .container .hero {
@@ -45,6 +46,7 @@ body {
   position: relative;
 }
 .container .hero main .text__section {
+  padding: 1rem 0;
   display: flex;
   gap: 5rem;
   align-items: center;
@@ -52,7 +54,7 @@ body {
 }
 .container .hero main .text__section h1 {
   color: hsl(240deg, 100%, 5%);
-  width: 20rem;
+  width: 50rem;
   font-weight: 900;
   font-size: 3rem;
 }
@@ -63,9 +65,8 @@ body {
 }
 .container .hero main .text__section .description p {
   color: hsl(236deg, 13%, 42%);
-  width: 25rem;
   line-height: 1.3rem;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 .container .hero main .text__section .description button {
   background-color: hsl(5deg, 85%, 63%);
@@ -75,20 +76,27 @@ body {
   padding: 1rem 2rem;
   text-transform: uppercase;
   font-weight: 600;
+  font-size: 0.7rem;
   letter-spacing: 0.2rem;
 }
 .container .hero aside {
   background-color: hsl(240deg, 100%, 5%);
   color: hsl(36deg, 100%, 99%);
-  padding: 0 2rem;
+  padding: 2rem;
   grid-column: 3/-1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .container .hero aside h1 {
   color: hsl(35deg, 77%, 62%);
   font-size: 2rem;
 }
 .container .hero aside section {
-  padding: 0.5rem 0;
+  line-height: 1.8rem;
+}
+.container .hero aside section h3 {
+  font-size: 1rem;
 }
 .container .hero aside section p {
   font-size: 0.8rem;
@@ -101,7 +109,7 @@ body {
 }
 .container .cards {
   display: flex;
-  padding: 2rem 0;
+  padding: 4rem 0;
   gap: 1.5rem;
   justify-content: space-between;
 }
@@ -121,6 +129,9 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+.container .cards .card .text__section h2 {
+  color: hsl(233deg, 8%, 79%);
+}
 .container .cards .card .text__section h4 {
   font-size: 0.9rem;
   font-weight: 900;
@@ -129,6 +140,61 @@ body {
   max-width: 12rem;
   font-size: 0.8rem;
   line-height: 1.2rem;
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .container header nav a {
+    display: none;
+  }
+  .container .hero {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .hero .text__section {
+    max-width: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    gap: 1rem !important;
+  }
+  .container .hero .text__section h1 {
+    max-width: 100%;
+  }
+  .container .hero .text__section p {
+    padding: 0;
+    font-size: 1rem !important;
+  }
+  .container .hero aside {
+    padding: 1rem;
+  }
+  .container .cards {
+    flex-direction: column;
+  }
+  .container .cards .card {
+    align-items: center;
+  }
+  .container .cards .card .image__section {
+    background-color: green;
+    height: 10rem;
+  }
+  .container .cards .card .text__section h2 {
+    font-size: 2rem;
+  }
+  .container .cards .card .text__section h4 {
+    font-size: 1.2rem;
+    font-weight: 900;
+  }
+  .container .cards .card .text__section p {
+    max-width: 100%;
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
