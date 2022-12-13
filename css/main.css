@@ -29,6 +29,9 @@ body {
   font-size: 0.9rem;
   text-decoration: none;
 }
+.container header .menu__bar {
+  display: none;
+}
 .container .hero {
   display: grid;
   gap: 2rem;
@@ -147,8 +150,11 @@ body {
     width: 100%;
     padding: 0 1rem;
   }
-  .container header nav a {
+  .container header nav {
     display: none;
+  }
+  .container header .menu__bar {
+    display: block;
   }
   .container .hero {
     display: flex;

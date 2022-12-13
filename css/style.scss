@@ -38,6 +38,9 @@ body{
             text-decoration: none;
         }
     }
+    .menu__bar{
+        display: none;
+    }
 }
 .hero{
     display: grid;
@@ -169,10 +172,11 @@ body{
         // max-width: 0;
         header{
             nav{
-                a{
                     display: none;
                 }
-            }
+                .menu__bar {
+                    display: block;
+                }
         }
         .hero{
             display: flex;
