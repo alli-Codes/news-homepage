@@ -31,11 +31,15 @@ body{
 
     nav{
         display: flex;
+        align-items: center;
         gap: 2rem;
         a{
             color: hsl(236, 13%, 42%);
             font-size: .9rem;
             text-decoration: none;
+            transition: color .5s ease;
+        }a:hover{
+            color: $pc-orange;
         }
     }
     .menu__bar{
@@ -137,8 +141,9 @@ body{
 .cards{
     display: flex;
     padding: 4rem 0;
-    gap: 1.5rem;
-    justify-content: space-between;
+    gap: 1.2rem;
+    // justify-content: space-between;
+    flex-wrap: wrap;
     .card{
         display: flex;
         gap: 1.5rem;
@@ -159,6 +164,13 @@ body{
             h4{
                 font-size: .9rem;
                 font-weight: 900;
+                a{
+                    color: $sc-very__dark__blue;
+                    text-decoration: none;
+                    transition: color .5s ease;
+                }a:hover {
+                    color: $pc-orange;
+                }
             }
             p  {
                 max-width: 12rem;
@@ -170,7 +182,7 @@ body{
 }
 }
 
-@media (max-width: 700px){
+@media (max-width: 768px){
     .container{
         // background-color: green;
         width: 100%;
@@ -229,7 +241,7 @@ body{
         .cards{
             flex-direction: column;
             .card{
-                // min-height: 10rem;
+                line-height: 3rem;
                 align-items: center;
                 .image__section{
                     background-color: green;

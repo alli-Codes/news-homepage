@@ -22,12 +22,17 @@ body {
 }
 .container header nav {
   display: flex;
+  align-items: center;
   gap: 2rem;
 }
 .container header nav a {
   color: hsl(236deg, 13%, 42%);
   font-size: 0.9rem;
   text-decoration: none;
+  transition: color 0.5s ease;
+}
+.container header nav a:hover {
+  color: hsl(5deg, 85%, 63%);
 }
 .container header .menu__bar {
   display: none;
@@ -119,8 +124,8 @@ body {
 .container .cards {
   display: flex;
   padding: 4rem 0;
-  gap: 1.5rem;
-  justify-content: space-between;
+  gap: 1.2rem;
+  flex-wrap: wrap;
 }
 .container .cards .card {
   display: flex;
@@ -145,13 +150,21 @@ body {
   font-size: 0.9rem;
   font-weight: 900;
 }
+.container .cards .card .text__section h4 a {
+  color: hsl(240deg, 100%, 5%);
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+.container .cards .card .text__section h4 a:hover {
+  color: hsl(5deg, 85%, 63%);
+}
 .container .cards .card .text__section p {
   max-width: 12rem;
   font-size: 0.8rem;
   line-height: 1.2rem;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .container {
     width: 100%;
     padding: 0 1rem;
@@ -204,6 +217,7 @@ body {
     flex-direction: column;
   }
   .container .cards .card {
+    line-height: 3rem;
     align-items: center;
   }
   .container .cards .card .image__section {
