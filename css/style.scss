@@ -24,6 +24,38 @@ body{
     padding: 3rem 1rem;
     max-width: 62rem;
 
+    .menu{
+        background-color: white;
+        height: 100vh;
+        width: 18rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        position: fixed;
+        right: 0;
+        z-index: 10;
+        transform: translateX(18rem);
+        transition: transform 1s ease;
+        .close{
+            display: flex;
+            justify-content: flex-end;
+        }
+        nav{
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            a{
+                color: $sc-dark__grayish__blue;
+                text-decoration: none;
+                font-weight: 500;
+            }
+        }
+    }
+    .open{
+        transform: translateX(0);
+    }
+
     header{
         padding: 2rem 0 ;
         display: flex;
