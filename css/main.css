@@ -47,9 +47,13 @@ body {
   transform: translateX(0);
 }
 .container header {
+  background-color: white;
   padding: 2rem 0;
   display: flex;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 5;
 }
 .container header nav {
   display: flex;
@@ -99,7 +103,7 @@ body {
 }
 .container .hero main .text__section h1 {
   color: hsl(240deg, 100%, 5%);
-  width: 50rem;
+  width: 55rem;
   font-weight: 900;
   font-size: 3rem;
 }
@@ -174,7 +178,6 @@ body {
   height: 100%;
 }
 .container .cards .card .text__section {
-  padding: 0.6rem 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -204,6 +207,9 @@ body {
   .container {
     width: 100%;
     padding: 0 1rem;
+  }
+  .container header {
+    align-items: center;
   }
   .container header nav {
     display: none;
@@ -253,12 +259,16 @@ body {
     flex-direction: column;
   }
   .container .cards .card {
-    line-height: 3rem;
     align-items: center;
   }
   .container .cards .card .image__section {
     background-color: green;
     height: 10rem;
+  }
+  .container .cards .card .text__section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
   }
   .container .cards .card .text__section h2 {
     font-size: 2rem;
