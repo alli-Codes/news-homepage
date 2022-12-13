@@ -36,7 +36,7 @@ body{
         right: 0;
         z-index: 10;
         transform: translateX(18rem);
-        transition: transform 1s ease;
+        transition: transform .3s ease;
         .close{
             display: flex;
             justify-content: flex-end;

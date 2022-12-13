@@ -27,7 +27,7 @@ body {
   right: 0;
   z-index: 10;
   transform: translateX(18rem);
-  transition: transform 1s ease;
+  transition: transform 0.3s ease;
 }
 .container .menu .close {
   display: flex;
